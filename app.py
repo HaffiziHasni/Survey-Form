@@ -41,13 +41,7 @@ def submit():
     know=request.form.get("know")
     interest=request.form.getlist("interest") #getlist for multiple checkbox
     comment=request.form.get("comment")
-    print("name: ",name)
-    print("email: ", email)
-    print("Age: ",number)
-    print("Position interviewed: ",dropdown)
-    print("Knowledge: ",know)
-    print("Other interest:",interest)
-    print("Comment: ",comment)
+    
 
    
     return render_template("submission.html")
