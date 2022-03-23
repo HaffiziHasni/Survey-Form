@@ -1,0 +1,84 @@
+html{
+    background-image:url('https://miro.medium.com/max/1400/1*t42GOoZZzzepBXjJSrWQTA.jpeg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height:100%;
+    font-family: sans-serif;
+    
+  
+  }
+  #main{
+    color:white;
+  }
+  
+  #description, #title{
+    color:white;
+  }
+  #title{
+    text-align: center;
+    font-family:sans-serif;
+  }
+  
+  #description{
+    text-align:center;
+    font-size:1em;
+    font-family:sans-serif;
+  }
+  
+  .formAll{
+    text-align: justified;
+    font-family:sans-serif;
+    
+  
+  }
+  
+   #name, #email, #number, textarea, #dropdown{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+   
+    
+  }
+  
+  #survey-form{
+   background: rgba(255,255,255, .3);
+   backdrop-filter: blur(20px); /*frostedEffect*/
+   margin:2em;
+   padding:2em;
+   border-radius:20px;
+  }
+  
+  
+  #submit{
+    text-align:justified;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+   
+  }
+  
+  #submit:hover{
+    
+    background-color: rgb(174,198,207,0.8);
+    backdrop-filter: blur(5px); 
+    cursor:pointer;
+  }
+
+  .thankYou{
+      text-align:center;
+      position: absolute;
+      top: 30%;
+      left:40%;
+      
+      
+
+  }

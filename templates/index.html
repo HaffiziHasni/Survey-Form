@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Survey</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div id="main">
+        <div id="body">
+          <h1 id="title"> Thank You For Attending The Interview</h1>
+          <p id="description"><i>Kindly fill this form to for any comments that you may have</i></p>
+        </div>
+        
+        <form class= "survey-form"name="survey-form" id="survey-form" method="POST" action="submission">
+        
+          <div class="formAll" >
+            <label id="name-label"><b>Name</b></name>
+            <input type="text" name="name" id="name" class="formAll"     placeholder="Enter your name" required>
+          </div>
+           <div class="formAll">
+             <label id="email-label"><b>Email</b></name>
+            <input type="email" name="email" id="email" class="formAll" placeholder="Enter your Email" required>
+          </div>
+           <div class="formAll">
+             <label id="number-label"><b>Age (optional)</b></name>
+            <input type="number" name="number" id="number" class="formAll" min="10" max="100" placeholder="Age">
+          </div>
+          <div class="formAll">
+            <p><b>What was the role that you were interviewing for?</b></p>
+            <select id="dropdown" name="dropdown" class="formAll" required>
+              <option disabled="" selected="" value=""><b>Select a role</b></option>
+               <option>Cloud Architect</option>
+              <option>Cloud Consultant</option>
+              <option>Data Scientist</option>
+              <option>Digital Marketing Manager</option>
+              <option>Senior Software Engineer</option>
+              <option>Junior Software Engineer</option>
+              <option>Product Manager</option>
+              <option>Product Owner</option>
+              <option>Solution Architect</option>
+              <option>SEO Specialist</option>
+           </select>
+          </div>
+          <div class="formAll"name="know" id="know">
+            <p><b>The interviewer clearly knew about the role</b></p>
+            <label><input name="know" value="strongly Agree" type="radio" class="input-radio" checked="">Strongly Agree</label>
+            <label><input name="know" value="agree" type="radio" class="input-radio" checked="">Agree</label>
+            <label><input name="know" value="disagree" type="radio" class="input-radio" checked="">Disagree</label>
+            <label><input name="know" value="strongly Disagree" type="radio" class="input-radio" checked="">Strongly Disagree</label>
+          </div>
+          <div class="formAll" id="interest" name="interest">
+            <p><b>Please select other positions that you would be interested in applying</b></p>
+            <label><input name="interest" value="Quality Analyst Engineer" type="checkbox">Quality Analyst Engineer</label>
+            <label><input name="interest" value="SOC Analyst" type="checkbox">SOC Analyst</label>
+             <label><input name="interest" value="Data Engineer" type="checkbox">Data Engineer</label>
+             <label><input name="interest" value="Test Automation Engineer" type="checkbox">Test Automation Engineer</label>
+          </div>
+         
+          
+          <div class="formAll",name="comment" id="comment">
+            <p><b>Anything to add?</b></p>
+            <label>
+            <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea></label>
+          </div>
+        <div><input class="formAll" type="submit" id="submit" ></div>
+        </form>
+         
+        
+        </div>   
+</body>
+</html>
