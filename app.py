@@ -1,4 +1,5 @@
 from datetime import timedelta
+from xml.etree.ElementTree import Comment
 from flask import Flask,render_template,request
 from flask_sqlalchemy import SQLAlchemy
 
@@ -20,9 +21,20 @@ class survey(db.Model):
     know=db.Column("Recruiter's Knowledge", db.String(100))
     interest=db.Column("Other positions", db.String(100))
     comment=db.Column("Comment", db.String(1000))
+
+    def __init__(self,name,email,number,dropdown,know,interest,comment):
+        self.name=name
+        self.email=email
+        self.number=number
+        self.dropdown=dropdown
+        self.know=know
+        self.interest=interest
+        self.comment=comment
+
 #end here for database
+
     
-   
+  
 
 
 @app.route('/', methods=['GET', 'POST'])
